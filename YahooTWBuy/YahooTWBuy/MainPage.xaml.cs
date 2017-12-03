@@ -13,5 +13,30 @@ namespace YahooTWBuy
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            switch (Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                case Device.Android:
+                case Device.UWP:
+                case Device.WinPhone:
+                    break;
+                default:
+                    break;
+            }
+        }
+        protected override bool OnBackButtonPressed()
+        {
+            if (MainWebView.CanGoBack)
+            {
+                MainWebView.GoBack();
+                return false;
+            }
+            return base.OnBackButtonPressed();
+        }
     }
 }
