@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="YahooTWBuy.Pages.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:YahooTWBuy">
+    <ContentPage.Content>
+        <Grid x:Name="MainGrid">
+            <WebView
+                x:Name="MainWebView"
+                BackgroundColor="Black"
+                Navigated="MainWebView_Navigated"
+                Navigating="MainWebView_Navigating"
+                Source="https://m.tw.buy.yahoo.com/" />
+            <StackLayout
+                BackgroundColor="White"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="{Binding IsBusy}"
+                Opacity="0.7"
+                VerticalOptions="FillAndExpand">
+
+                <ActivityIndicator
+
+                    HorizontalOptions="FillAndExpand"
+                    IsRunning="{Binding IsBusy}"
+                    IsVisible="{Binding IsBusy}"
+                    VerticalOptions="CenterAndExpand"
+                    Color="DarkBlue" />
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

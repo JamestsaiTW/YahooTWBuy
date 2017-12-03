@@ -13,7 +13,7 @@ namespace YahooTWBuy
         {
             InitializeComponent();
 
-            MainPage = new YahooTWBuy.MainPage();
+            MainPage = new YahooTWBuy.Pages.MainPage();
         }
 
         protected override void OnStart()
