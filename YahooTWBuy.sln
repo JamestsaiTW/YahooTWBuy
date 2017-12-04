@@ -11,6 +11,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YahooTWBuy.UWP", "YahooTWBu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YahooTWBuy.iOS", "YahooTWBuy\YahooTWBuy.iOS\YahooTWBuy.iOS.csproj", "{546D50C3-CE48-4E0E-8618-2416440D2A9E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScreenShots", "ScreenShots", "{176C62BC-97DA-4E4E-B531-C5723D4B510E}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\James Tsai\Desktop\wp_ss_20171205_0001.png = C:\Users\James Tsai\Desktop\wp_ss_20171205_0001.png
+		C:\Users\James Tsai\Desktop\wp_ss_20171205_0002.png = C:\Users\James Tsai\Desktop\wp_ss_20171205_0002.png
+		C:\Users\James Tsai\Desktop\wp_ss_20171205_0003.png = C:\Users\James Tsai\Desktop\wp_ss_20171205_0003.png
+		C:\Users\James Tsai\Desktop\wp_ss_20171205_0004.png = C:\Users\James Tsai\Desktop\wp_ss_20171205_0004.png
+		C:\Users\James Tsai\Desktop\wp_ss_20171205_0005.png = C:\Users\James Tsai\Desktop\wp_ss_20171205_0005.png
+		C:\Users\James Tsai\Desktop\wp_ss_20171205_0006.png = C:\Users\James Tsai\Desktop\wp_ss_20171205_0006.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
