@@ -9,5 +9,6 @@
     <Import Project="$(NuGetPackageRoot)microsoft.net.native.sharedlibrary-x64\1.7.0\build\Microsoft.Net.Native.SharedLibrary-x64.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.net.native.sharedlibrary-x64\1.7.0\build\Microsoft.Net.Native.SharedLibrary-x64.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.net.native.sharedlibrary-arm\1.7.0\build\Microsoft.Net.Native.SharedLibrary-arm.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.net.native.sharedlibrary-arm\1.7.0\build\Microsoft.Net.Native.SharedLibrary-arm.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.net.native.compiler\1.7.1\build\Microsoft.Net.Native.Compiler.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.net.native.compiler\1.7.1\build\Microsoft.Net.Native.Compiler.targets')" />
+    <Import Project="$(NuGetPackageRoot)livexaml\2.1.1\build\LiveXAML.targets" Condition="Exists('$(NuGetPackageRoot)livexaml\2.1.1\build\LiveXAML.targets')" />
   </ImportGroup>
 </Project>

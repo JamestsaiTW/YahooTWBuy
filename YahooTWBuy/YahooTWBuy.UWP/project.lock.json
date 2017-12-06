@@ -2,6 +2,12 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.10586": {
+      "LiveXAML/2.1.1": {
+        "type": "package",
+        "build": {
+          "build/LiveXAML.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -2230,6 +2236,12 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm": {
+      "LiveXAML/2.1.1": {
+        "type": "package",
+        "build": {
+          "build/LiveXAML.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -4548,6 +4560,12 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm-aot": {
+      "LiveXAML/2.1.1": {
+        "type": "package",
+        "build": {
+          "build/LiveXAML.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -6902,6 +6920,12 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64": {
+      "LiveXAML/2.1.1": {
+        "type": "package",
+        "build": {
+          "build/LiveXAML.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -9229,6 +9253,12 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64-aot": {
+      "LiveXAML/2.1.1": {
+        "type": "package",
+        "build": {
+          "build/LiveXAML.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -11592,6 +11622,12 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86": {
+      "LiveXAML/2.1.1": {
+        "type": "package",
+        "build": {
+          "build/LiveXAML.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -13919,6 +13955,12 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86-aot": {
+      "LiveXAML/2.1.1": {
+        "type": "package",
+        "build": {
+          "build/LiveXAML.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -16283,6 +16325,20 @@
     }
   },
   "libraries": {
+    "LiveXAML/2.1.1": {
+      "sha512": "jl/39TBLEpH2Mjvd+aLM7AjCdqeV6qU96nyPEslYUoNIGFR21eKU74n62yulY1OQFsX0kTBwRg+/6kCEss5qIA==",
+      "type": "package",
+      "path": "livexaml/2.1.1",
+      "files": [
+        "build/LiveXAML.targets",
+        "build/XamarinLive.Build.dll",
+        "build/XamarinLive.Common.dll",
+        "build/minified.cs",
+        "build/minified.tpl.cs",
+        "livexaml.2.1.1.nupkg.sha512",
+        "livexaml.nuspec"
+      ]
+    },
     "Microsoft.CSharp/4.0.1": {
       "sha512": "17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
       "type": "package",
@@ -26066,13 +26122,15 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "LiveXAML >= 2.1.1",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.2",
       "Xamarin.Forms >= 2.5.0.91635"
     ],
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\James Tsai\\.nuget\\packages\\": {}
+    "C:\\Users\\James Tsai\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "restore": {
@@ -26083,9 +26141,13 @@
       "packagesPath": "C:\\Users\\James Tsai\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\James Tsai\\source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.UWP\\obj\\",
       "projectStyle": "ProjectJson",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\James Tsai\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -26102,8 +26164,9 @@
       }
     },
     "dependencies": {
-      "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.2",
-      "Xamarin.Forms": "2.5.0.91635"
+      "LiveXAML": "[2.1.1, )",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[6.0.2, )",
+      "Xamarin.Forms": "[2.5.0.91635, )"
     },
     "frameworks": {
       "uap10.0.10586": {}

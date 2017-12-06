@@ -7,7 +7,6 @@ using YahooTWBuy.DependencyServices;
 using YahooTWBuy.UWP.DependencyServices;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(AppInitialViewHeight))]
 namespace YahooTWBuy.UWP.DependencyServices
 {
     public class AppInitialViewHeight : IAppInitialViewHeight

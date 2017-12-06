@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using YahooTWBuy.UWP.DependencyServices;
 
 namespace YahooTWBuy.UWP
 {
@@ -62,6 +63,8 @@ namespace YahooTWBuy.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
                 Xamarin.Forms.Forms.Init(e);
+
+                //Xamarin.Forms.DependencyService.Register<XamarinFormsToast>();
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
