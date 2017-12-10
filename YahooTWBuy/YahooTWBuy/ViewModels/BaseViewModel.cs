@@ -25,16 +25,16 @@ namespace YahooTWBuy.ViewModels
             }
         }
 
-        private bool _networkConnectedStatus;
+        private bool _networkIsConnected;
 
-        public bool NetworkConnectedStatus
+        public bool NetworkIsConnected
         {
-            get { return _networkConnectedStatus; }
+            get { return _networkIsConnected; }
             set
             {
-                if (_networkConnectedStatus != value)
+                if (_networkIsConnected != value)
                 {
-                    _networkConnectedStatus = value;
+                    _networkIsConnected = value;
                     OnPropertyChanged();
                 }
             }

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.10586": {
-      "LiveXAML/2.1.1": {
+      "LiveXAML/2.1.6": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -35,7 +35,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.1": {
+      "Microsoft.Net.Native.Compiler/1.7.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -245,14 +245,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.1",
+          "Microsoft.Net.Native.Compiler": "1.7.2",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -267,7 +267,7 @@
           "System.Net.Sockets": "4.1.0",
           "System.Net.WebHeaderCollection": "4.0.1",
           "System.Net.WebSockets": "4.0.0",
-          "System.Net.WebSockets.Client": "4.0.0",
+          "System.Net.WebSockets.Client": "4.0.2",
           "System.Numerics.Vectors.WindowsRuntime": "4.0.1",
           "System.Reflection.Context": "4.0.1",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.1",
@@ -1120,10 +1120,10 @@
           "lib/netstandard1.3/System.Net.WebSockets.dll": {}
         }
       },
-      "System.Net.WebSockets.Client/4.0.0": {
+      "System.Net.WebSockets.Client/4.0.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.0.2",
           "System.Collections": "4.0.11",
           "System.Diagnostics.Debug": "4.0.11",
           "System.Diagnostics.Tracing": "4.1.0",
@@ -2212,7 +2212,18 @@
           }
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xam.Plugin.Connectivity/3.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -2236,7 +2247,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm": {
-      "LiveXAML/2.1.1": {
+      "LiveXAML/2.1.6": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -2269,7 +2280,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.1": {
+      "Microsoft.Net.Native.Compiler/1.7.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -2426,14 +2437,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.1",
+          "Microsoft.Net.Native.Compiler": "1.7.2",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -2448,7 +2459,7 @@
           "System.Net.Sockets": "4.1.0",
           "System.Net.WebHeaderCollection": "4.0.1",
           "System.Net.WebSockets": "4.0.0",
-          "System.Net.WebSockets.Client": "4.0.0",
+          "System.Net.WebSockets.Client": "4.0.2",
           "System.Numerics.Vectors.WindowsRuntime": "4.0.1",
           "System.Reflection.Context": "4.0.1",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.1",
@@ -2466,7 +2477,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.2"
+          "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -2809,7 +2820,7 @@
           "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -3535,10 +3546,10 @@
           "lib/netstandard1.3/System.Net.WebSockets.dll": {}
         }
       },
-      "System.Net.WebSockets.Client/4.0.0": {
+      "System.Net.WebSockets.Client/4.0.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.0.2",
           "System.Collections": "4.0.11",
           "System.Diagnostics.Debug": "4.0.11",
           "System.Diagnostics.Tracing": "4.1.0",
@@ -4536,7 +4547,18 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xam.Plugin.Connectivity/3.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -4560,7 +4582,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm-aot": {
-      "LiveXAML/2.1.1": {
+      "LiveXAML/2.1.6": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -4593,7 +4615,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.1": {
+      "Microsoft.Net.Native.Compiler/1.7.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -4751,14 +4773,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.1",
+          "Microsoft.Net.Native.Compiler": "1.7.2",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -4773,7 +4795,7 @@
           "System.Net.Sockets": "4.1.0",
           "System.Net.WebHeaderCollection": "4.0.1",
           "System.Net.WebSockets": "4.0.0",
-          "System.Net.WebSockets.Client": "4.0.0",
+          "System.Net.WebSockets.Client": "4.0.2",
           "System.Numerics.Vectors.WindowsRuntime": "4.0.1",
           "System.Reflection.Context": "4.0.1",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.1",
@@ -4791,7 +4813,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.2"
+          "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -5179,7 +5201,7 @@
           "runtimes/aot/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -5895,10 +5917,10 @@
           "lib/netstandard1.3/System.Net.WebSockets.dll": {}
         }
       },
-      "System.Net.WebSockets.Client/4.0.0": {
+      "System.Net.WebSockets.Client/4.0.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.0.2",
           "System.Collections": "4.0.11",
           "System.Diagnostics.Debug": "4.0.11",
           "System.Diagnostics.Tracing": "4.1.0",
@@ -6896,7 +6918,18 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xam.Plugin.Connectivity/3.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -6920,7 +6953,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64": {
-      "LiveXAML/2.1.1": {
+      "LiveXAML/2.1.6": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -6953,7 +6986,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.1": {
+      "Microsoft.Net.Native.Compiler/1.7.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -7113,14 +7146,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.1",
+          "Microsoft.Net.Native.Compiler": "1.7.2",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -7135,7 +7168,7 @@
           "System.Net.Sockets": "4.1.0",
           "System.Net.WebHeaderCollection": "4.0.1",
           "System.Net.WebSockets": "4.0.0",
-          "System.Net.WebSockets.Client": "4.0.0",
+          "System.Net.WebSockets.Client": "4.0.2",
           "System.Numerics.Vectors.WindowsRuntime": "4.0.1",
           "System.Reflection.Context": "4.0.1",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.1",
@@ -7153,7 +7186,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.2"
+          "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -7496,7 +7529,7 @@
           "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -8228,10 +8261,10 @@
           "lib/netstandard1.3/System.Net.WebSockets.dll": {}
         }
       },
-      "System.Net.WebSockets.Client/4.0.0": {
+      "System.Net.WebSockets.Client/4.0.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.0.2",
           "System.Collections": "4.0.11",
           "System.Diagnostics.Debug": "4.0.11",
           "System.Diagnostics.Tracing": "4.1.0",
@@ -9229,7 +9262,18 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xam.Plugin.Connectivity/3.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -9253,7 +9297,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64-aot": {
-      "LiveXAML/2.1.1": {
+      "LiveXAML/2.1.6": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -9286,7 +9330,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.1": {
+      "Microsoft.Net.Native.Compiler/1.7.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -9447,14 +9491,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.1",
+          "Microsoft.Net.Native.Compiler": "1.7.2",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -9469,7 +9513,7 @@
           "System.Net.Sockets": "4.1.0",
           "System.Net.WebHeaderCollection": "4.0.1",
           "System.Net.WebSockets": "4.0.0",
-          "System.Net.WebSockets.Client": "4.0.0",
+          "System.Net.WebSockets.Client": "4.0.2",
           "System.Numerics.Vectors.WindowsRuntime": "4.0.1",
           "System.Reflection.Context": "4.0.1",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.1",
@@ -9487,7 +9531,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.2"
+          "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -9875,7 +9919,7 @@
           "runtimes/aot/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -10597,10 +10641,10 @@
           "lib/netstandard1.3/System.Net.WebSockets.dll": {}
         }
       },
-      "System.Net.WebSockets.Client/4.0.0": {
+      "System.Net.WebSockets.Client/4.0.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.0.2",
           "System.Collections": "4.0.11",
           "System.Diagnostics.Debug": "4.0.11",
           "System.Diagnostics.Tracing": "4.1.0",
@@ -11598,7 +11642,18 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xam.Plugin.Connectivity/3.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -11622,7 +11677,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86": {
-      "LiveXAML/2.1.1": {
+      "LiveXAML/2.1.6": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -11655,7 +11710,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.1": {
+      "Microsoft.Net.Native.Compiler/1.7.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -11815,14 +11870,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.1",
+          "Microsoft.Net.Native.Compiler": "1.7.2",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -11837,7 +11892,7 @@
           "System.Net.Sockets": "4.1.0",
           "System.Net.WebHeaderCollection": "4.0.1",
           "System.Net.WebSockets": "4.0.0",
-          "System.Net.WebSockets.Client": "4.0.0",
+          "System.Net.WebSockets.Client": "4.0.2",
           "System.Numerics.Vectors.WindowsRuntime": "4.0.1",
           "System.Reflection.Context": "4.0.1",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.1",
@@ -11855,7 +11910,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.2"
+          "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -12198,7 +12253,7 @@
           "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -12930,10 +12985,10 @@
           "lib/netstandard1.3/System.Net.WebSockets.dll": {}
         }
       },
-      "System.Net.WebSockets.Client/4.0.0": {
+      "System.Net.WebSockets.Client/4.0.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.0.2",
           "System.Collections": "4.0.11",
           "System.Diagnostics.Debug": "4.0.11",
           "System.Diagnostics.Tracing": "4.1.0",
@@ -13931,7 +13986,18 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xam.Plugin.Connectivity/3.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -13955,7 +14021,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86-aot": {
-      "LiveXAML/2.1.1": {
+      "LiveXAML/2.1.6": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -13988,7 +14054,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.1": {
+      "Microsoft.Net.Native.Compiler/1.7.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -14149,14 +14215,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.1",
+          "Microsoft.Net.Native.Compiler": "1.7.2",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -14171,7 +14237,7 @@
           "System.Net.Sockets": "4.1.0",
           "System.Net.WebHeaderCollection": "4.0.1",
           "System.Net.WebSockets": "4.0.0",
-          "System.Net.WebSockets.Client": "4.0.0",
+          "System.Net.WebSockets.Client": "4.0.2",
           "System.Numerics.Vectors.WindowsRuntime": "4.0.1",
           "System.Reflection.Context": "4.0.1",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.1",
@@ -14189,7 +14255,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.2"
+          "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -14577,7 +14643,7 @@
           "runtimes/aot/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
+      "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -15299,10 +15365,10 @@
           "lib/netstandard1.3/System.Net.WebSockets.dll": {}
         }
       },
-      "System.Net.WebSockets.Client/4.0.0": {
+      "System.Net.WebSockets.Client/4.0.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.0.2",
           "System.Collections": "4.0.11",
           "System.Diagnostics.Debug": "4.0.11",
           "System.Diagnostics.Tracing": "4.1.0",
@@ -16300,7 +16366,18 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.5.0.91635": {
+      "Xam.Plugin.Connectivity/3.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.5.0.121934": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -16325,17 +16402,17 @@
     }
   },
   "libraries": {
-    "LiveXAML/2.1.1": {
-      "sha512": "jl/39TBLEpH2Mjvd+aLM7AjCdqeV6qU96nyPEslYUoNIGFR21eKU74n62yulY1OQFsX0kTBwRg+/6kCEss5qIA==",
+    "LiveXAML/2.1.6": {
+      "sha512": "BvYcFvYzJ5x8XtlA8RlRf800zEAn2BRCmgEoEmYCmZQ7WW0A8YGbZx22N18hjQ0GhUfDCrjEmFphFvJBnj7png==",
       "type": "package",
-      "path": "livexaml/2.1.1",
+      "path": "livexaml/2.1.6",
       "files": [
         "build/LiveXAML.targets",
         "build/XamarinLive.Build.dll",
         "build/XamarinLive.Common.dll",
         "build/minified.cs",
         "build/minified.tpl.cs",
-        "livexaml.2.1.1.nupkg.sha512",
+        "livexaml.2.1.6.nupkg.sha512",
         "livexaml.nuspec"
       ]
     },
@@ -16396,15 +16473,15 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Microsoft.Net.Native.Compiler/1.7.1": {
-      "sha512": "P55mWSgc8zLrk2eoRxd3T3QPVXXKrqD/DypC+It8wSgZfaUl2/o31bCOR+aWq1NtxDwDnCPGNVsmo/bmgIeJtA==",
+    "Microsoft.Net.Native.Compiler/1.7.2": {
+      "sha512": "3b6ztTeQxeiBMgXAK1/oMzwhQsQ02W6EQ6lU7Ts7ZmoJcwG7qpjI/BfWiHk5CIpaqKP2BEcpTCDdSDcjkO+YHw==",
       "type": "package",
-      "path": "microsoft.net.native.compiler/1.7.1",
+      "path": "microsoft.net.native.compiler/1.7.2",
       "files": [
+        "Microsoft.Net.Native.Compiler.1.7.2.nupkg.sha512",
+        "Microsoft.Net.Native.Compiler.nuspec",
         "build/Microsoft.Net.Native.Compiler.props",
         "build/Microsoft.Net.Native.Compiler.targets",
-        "microsoft.net.native.compiler.1.7.1.nupkg.sha512",
-        "microsoft.net.native.compiler.nuspec",
         "tools/LibraryXML/Callisto.rd.xml",
         "tools/LibraryXML/GalaSoft.MvvmLight.Extras.Win8.rd.xml",
         "tools/LibraryXML/GalaSoft.MvvmLight.Win8.rd.xml",
@@ -18631,15 +18708,15 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
-      "sha512": "1x37WPEc/7G4BedFtmSKCK9E1wVWm0BTgTBe7lv/LuN/5a48H8KpGLO5I0fmX51y5r/BXJNaLjpfDkH1i1j0rQ==",
+    "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "sha512": "D0sTB0Ng5r69XKBQxdogba180v7+9ckEtrovPHnPhkL+bj+qZ9wONyWTOTn+kvPhSkeEUFRECEFtOyhYNDIUTA==",
       "type": "package",
-      "path": "microsoft.netcore.universalwindowsplatform/6.0.2",
+      "path": "microsoft.netcore.universalwindowsplatform/6.0.4",
       "files": [
         "LICENSE.TXT",
+        "Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
+        "Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
-        "microsoft.netcore.universalwindowsplatform.6.0.2.nupkg.sha512",
-        "microsoft.netcore.universalwindowsplatform.nuspec",
         "ref/netcore50/_._",
         "ref/uap10.0.15138/Microsoft.CSharp.dll",
         "ref/uap10.0.15138/Microsoft.CSharp.xml",
@@ -19776,16 +19853,16 @@
         "runtimes/win/lib/netstandard1.5/System.Runtime.Extensions.dll"
       ]
     },
-    "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
-      "sha512": "zz8GaaUGJIFUsJPY0g0ToBrCv3kXbdwDXbd2Tr+HXvJXFD9HrHQHEue4ZVcZpc82mUfdXyRzO4+t6hY64Q4dTQ==",
+    "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "sha512": "9xRow1giMV7bAp/06SMhs0Gf+bx2Ctp248bcBm/h0ZGcR1SJiAPuVvhDaSzxyMrTe08t/vf5pYMHj9kyMFtw1w==",
       "type": "package",
-      "path": "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform/6.0.2",
+      "path": "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform/6.0.4",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.0.2.nupkg.sha512",
-        "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.nuspec",
+        "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
+        "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
@@ -19965,16 +20042,16 @@
         "runtimes/win10-arm-aot/lib/netcore50/clrcompression.dll"
       ]
     },
-    "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
-      "sha512": "TDXnAPztcmMBpQomeGbo0gk/6WCrQUc5DL1HJcxcefNCRUlqAbUdsUz8sEGaJQ9NUbSshnEeY4wrVgyOonAf+Q==",
+    "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "sha512": "W1DmqqLsa5ApstteB2tcOWk9Ca1NvT7vTk67fu/JOE1BGkVn6BfD6BxFJG0+70kHIUyHcJPwGDnZ6JDk5d0ikg==",
       "type": "package",
-      "path": "runtime.win10-arm.microsoft.netcore.universalwindowsplatform/6.0.2",
+      "path": "runtime.win10-arm.microsoft.netcore.universalwindowsplatform/6.0.4",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-arm.microsoft.netcore.universalwindowsplatform.6.0.2.nupkg.sha512",
-        "runtime.win10-arm.microsoft.netcore.universalwindowsplatform.nuspec",
+        "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
+        "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
         "runtimes/win10-arm/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-arm/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
         "runtimes/win10-arm/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
@@ -20141,16 +20218,16 @@
         "runtimes/win10-arm/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
-    "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
-      "sha512": "zRfgkMb/yA8Ldgql4gzY5SRcXoj6KgCoKrfPVdOC7iv5PzxGNfQnHdS0WQ5sDaLB+O8BVYpyMYQ4eQ1gbRq+GA==",
+    "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "sha512": "xX/N8leWGv6hJvA4ABOKaG4ixRwU9RN01AmnggiBDgTtPaPJAGbZpuiSQy7yZNpsqpMgDk4z2ag29l/vs3luDQ==",
       "type": "package",
-      "path": "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform/6.0.2",
+      "path": "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform/6.0.4",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform.6.0.2.nupkg.sha512",
-        "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform.nuspec",
+        "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
+        "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
@@ -20330,16 +20407,16 @@
         "runtimes/win10-x64-aot/lib/netcore50/clrcompression.dll"
       ]
     },
-    "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
-      "sha512": "sNKsP3Fo/XKs4lzEfXzQ6p5+H+gsMVKDtLfNApeCtpsimTt+Nn9lzYggaqvv+gMRJ90j5MnnMZaUf6RwV56nfQ==",
+    "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "sha512": "kzhOIrg9yZa0JORjZTDj272wCJ5VgowkxEiX5oPPRefd3sE1/mmiLUKrMOC3RESv5QZkPiABzkjIRVRNqsgWyw==",
       "type": "package",
-      "path": "runtime.win10-x64.microsoft.netcore.universalwindowsplatform/6.0.2",
+      "path": "runtime.win10-x64.microsoft.netcore.universalwindowsplatform/6.0.4",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-x64.microsoft.netcore.universalwindowsplatform.6.0.2.nupkg.sha512",
-        "runtime.win10-x64.microsoft.netcore.universalwindowsplatform.nuspec",
+        "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
+        "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
         "runtimes/win10-x64/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-x64/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
         "runtimes/win10-x64/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
@@ -20506,16 +20583,16 @@
         "runtimes/win10-x64/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
-    "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
-      "sha512": "y+OndyqwIIT0EN5x5oyGaW1hRAiej6n2SCk+JZGtMSgjF9i3QQn9dmxYtxazuk+O5MtQdApHYtgK7uKW3yL2ag==",
+    "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "sha512": "N+bSRgUV0o0LUve8jTNCRHRTPJ/r+q02cKGe6hqlstMGS00Ade4G6ISQdEkmGZt29jXgs1d/EW9goWMWrsDrYg==",
       "type": "package",
-      "path": "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform/6.0.2",
+      "path": "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform/6.0.4",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform.6.0.2.nupkg.sha512",
-        "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform.nuspec",
+        "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
+        "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
@@ -20695,16 +20772,16 @@
         "runtimes/win10-x86-aot/lib/netcore50/clrcompression.dll"
       ]
     },
-    "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.2": {
-      "sha512": "0cl6qKSo+w3v5Y6KrlzDm9GcsoS07OIZO/fEwDykvaJjhzsDeY8UFvLN7s3YiB7bUSAt0uWJcJi3eRBdUsiSBA==",
+    "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "sha512": "7S9jdgHXE2MH9llcDz0QQA9Ei2vZKs3cIYgiFKS48kBdB8ZIhY+EbJ0OvByhMBTZQiRs+NokieSuhge5z0nnDw==",
       "type": "package",
-      "path": "runtime.win10-x86.microsoft.netcore.universalwindowsplatform/6.0.2",
+      "path": "runtime.win10-x86.microsoft.netcore.universalwindowsplatform/6.0.4",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.0.2.nupkg.sha512",
-        "runtime.win10-x86.microsoft.netcore.universalwindowsplatform.nuspec",
+        "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
+        "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
         "runtimes/win10-x86/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-x86/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
         "runtimes/win10-x86/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
@@ -23193,10 +23270,10 @@
         "system.net.websockets.nuspec"
       ]
     },
-    "System.Net.WebSockets.Client/4.0.0": {
-      "sha512": "GY5h9cn0ZVsG4ORQqMytTldrqxet2RC2CSEsgWGf4XNW5jhL5SxzcUZph03xbZsgn7K3qMr+Rq+gkbJNI+FEXg==",
+    "System.Net.WebSockets.Client/4.0.2": {
+      "sha512": "NUCcDroX4lCQXgOrzlwIZ1u9YJ0krfyF0wk0ONnyLUmcQoEiYV2/OfUPRqUwQBbpH1BlGApkLgoQUwMqb5+c1g==",
       "type": "package",
-      "path": "system.net.websockets.client/4.0.0",
+      "path": "system.net.websockets.client/4.0.2",
       "files": [
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -23229,7 +23306,7 @@
         "runtimes/win/lib/net46/System.Net.WebSockets.Client.dll",
         "runtimes/win/lib/netcore50/System.Net.WebSockets.Client.dll",
         "runtimes/win/lib/netstandard1.3/System.Net.WebSockets.Client.dll",
-        "system.net.websockets.client.4.0.0.nupkg.sha512",
+        "system.net.websockets.client.4.0.2.nupkg.sha512",
         "system.net.websockets.client.nuspec"
       ]
     },
@@ -25932,10 +26009,64 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Xamarin.Forms/2.5.0.91635": {
-      "sha512": "rsEaYnT21VJBmqg/ucUDtKQ9BNbpVMPquPr8Ss3NZ2Y6K2Q75h4T21j7R1hG5MqLfb7DeiHjBv8UnPW7+EPNcw==",
+    "Xam.Plugin.Connectivity/3.0.3": {
+      "sha512": "BvzZjl/qGGmLBMyGmrb3IbNgXmiLkvTvrYJsGk0Bnkd7Op8nr57jOA7mtJsAoC1J0Abtr0G2j4zL9dVzb7zCqg==",
       "type": "package",
-      "path": "xamarin.forms/2.5.0.91635",
+      "path": "xam.plugin.connectivity/3.0.3",
+      "files": [
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Connectivity.dll",
+        "lib/MonoAndroid10/Plugin.Connectivity.pdb",
+        "lib/MonoAndroid10/Plugin.Connectivity.xml",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.dll",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.xml",
+        "lib/UAP10/Plugin.Connectivity.XML",
+        "lib/UAP10/Plugin.Connectivity.dll",
+        "lib/UAP10/Plugin.Connectivity.pdb",
+        "lib/UAP10/Plugin.Connectivity.pri",
+        "lib/UAP10/Plugin.Connectivity/Properties/Plugin.Connectivity.rd.xml",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.dll",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.pdb",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.xml",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.dll",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.pdb",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.xml",
+        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.dll",
+        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.pdb",
+        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.xml",
+        "lib/XamarinTVOS/Plugin.Connectivity.dll",
+        "lib/XamarinTVOS/Plugin.Connectivity.pdb",
+        "lib/XamarinTVOS/Plugin.Connectivity.xml",
+        "lib/net45/Plugin.Connectivity.Abstractions.dll",
+        "lib/net45/Plugin.Connectivity.Abstractions.pdb",
+        "lib/net45/Plugin.Connectivity.Abstractions.xml",
+        "lib/net45/Plugin.Connectivity.XML",
+        "lib/net45/Plugin.Connectivity.dll",
+        "lib/net45/Plugin.Connectivity.pdb",
+        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Connectivity.deps.json",
+        "lib/netstandard1.0/Plugin.Connectivity.dll",
+        "lib/netstandard1.0/Plugin.Connectivity.pdb",
+        "lib/netstandard1.0/Plugin.Connectivity.xml",
+        "xam.plugin.connectivity.3.0.3.nupkg.sha512",
+        "xam.plugin.connectivity.nuspec"
+      ]
+    },
+    "Xamarin.Forms/2.5.0.121934": {
+      "sha512": "H3Gh6nvximMk9i8LdfhPnARo+kEsh8hDXWRboiUPb1r22gkIGA8i8tbnRcSXJWk4fCW/kdMTom6SFN0L+NhItw==",
+      "type": "package",
+      "path": "xamarin.forms/2.5.0.121934",
       "files": [
         "build/netstandard1.0/Mono.Cecil.Mdb.dll",
         "build/netstandard1.0/Mono.Cecil.Pdb.dll",
@@ -26110,7 +26241,7 @@
         "lib/wpa81/Xamarin.Forms.Platform.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.2.5.0.91635.nupkg.sha512",
+        "xamarin.forms.2.5.0.121934.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -26122,9 +26253,10 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "LiveXAML >= 2.1.1",
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.2",
-      "Xamarin.Forms >= 2.5.0.91635"
+      "LiveXAML >= 2.1.6",
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.4",
+      "Xam.Plugin.Connectivity >= 3.0.3",
+      "Xamarin.Forms >= 2.5.0.121934"
     ],
     "UAP,Version=v10.0.10586": []
   },
@@ -26164,9 +26296,13 @@
       }
     },
     "dependencies": {
-      "LiveXAML": "[2.1.1, )",
-      "Microsoft.NETCore.UniversalWindowsPlatform": "[6.0.2, )",
-      "Xamarin.Forms": "[2.5.0.91635, )"
+      "LiveXAML": "[2.1.6, )",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[6.0.4, )",
+      "Xam.Plugin.Connectivity": {
+        "target": "Package",
+        "version": "[3.0.3, )"
+      },
+      "Xamarin.Forms": "[2.5.0.121934, )"
     },
     "frameworks": {
       "uap10.0.10586": {}

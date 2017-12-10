@@ -1,0 +1,40 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask AssemblyFile="XamarinLive.Build.dll" TaskName="XamarinLive.Build.XamarinLiveTask" />
+  <UsingTask AssemblyFile="XamarinLive.Build.dll" TaskName="XamarinLive.Build.XamarinLiveRevertTask" />
+
+  <Target Name="SaveXamlFiles">
+    <ItemGroup>
+    </ItemGroup>
+  </Target>
+
+  <Target Name="RemoveXamlFiles" DependsOnTargets="SaveXamlFiles" >
+    <ItemGroup>
+      <OriginalXamlResource Include="@(EmbeddedResource)" Condition="'%(Extension)' == '.xaml' AND '$(DefaultLanguageSourceExtension)' == '.cs'" />
+      <EmbeddedResource Remove="@(EmbeddedResource)" Condition="'%(Extension)' == '.xaml' AND '$(DefaultLanguageSourceExtension)' == '.cs'" />
+    </ItemGroup>
+  </Target>
+
+  <Target Name="XamarinLiveTask" AfterTargets="ResolveReferences" BeforeTargets="Compile" DependsOnTargets="RemoveXamlFiles" Condition="!$(DefineConstants.Contains('DISABLE_XAMARINFORMSLIVE')) ">
+    <Message Text="@(EmbeddedResource)"></Message>
+
+    <PropertyGroup>
+      <MtouchLink>None</MtouchLink>
+      <AndroidLinkMode>None</AndroidLinkMode>
+    </PropertyGroup>
+
+    <XamarinLiveTask Items="@(OriginalXamlResource)" IntermediateOutputPath="$(IntermediateOutputPath)" ProjectDir="$(ProjectDir)">
+      <Output TaskParameter="GeneratedFiles" PropertyName="XLGeneratedFiles" />
+    </XamarinLiveTask>
+
+    <ItemGroup>
+      <EmbeddedResource Include="$(XLGeneratedFiles)">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+        <SubType>Designer</SubType>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="$(MSBuildThisFileDirectory)minified.cs" />
+    </ItemGroup>
+  </Target>
+</Project>

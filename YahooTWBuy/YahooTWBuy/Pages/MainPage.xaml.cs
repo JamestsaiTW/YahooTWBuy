@@ -12,15 +12,21 @@ namespace YahooTWBuy.Pages
 {
     public partial class MainPage : ContentPage
     {
+        private static WebView _mainWebView;
+
         private MainPageViewModel _mainPageViewModel;
         private static DateTime? _lastBackKeyDownTime;
         private XamarinFormsTimer _mainPageTimer;
-        public MainPage()
+        public MainPage(bool currentNetworkIsConnected)
         {
             InitializeComponent();
-            BindingContext = _mainPageViewModel = new MainPageViewModel();
+            BindingContext = _mainPageViewModel = new MainPageViewModel() {
+                 NetworkIsConnected = currentNetworkIsConnected
+            };
 
             BuildMainPageTimer();
+
+
         }
 
         private void BuildMainPageTimer()
@@ -31,10 +37,16 @@ namespace YahooTWBuy.Pages
             });
         }
 
-        protected override void OnAppearing()
+        internal static void RefreshWebView()
+        {
+            if(_mainWebView != null)
+                _mainWebView.Source = (_mainWebView.Source as UrlWebViewSource).Url;
+        }
+
+        protected async override void OnAppearing()
         {
             base.OnAppearing();
-
+         
             switch (Device.RuntimePlatform)
             {
                 case Device.iOS:
@@ -50,6 +62,13 @@ namespace YahooTWBuy.Pages
                     break;
                 default:
                     break;
+            }
+
+            _mainWebView = MainWebView;
+
+            if (! _mainPageViewModel.NetworkIsConnected)
+            {
+                await DisplayAlert("通知", "目前網路狀態不穩定，無法讀取購物中心資料...", "了解");
             }
         }
         protected override bool OnBackButtonPressed()

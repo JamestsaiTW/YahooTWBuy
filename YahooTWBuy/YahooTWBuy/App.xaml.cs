@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Plugin.Connectivity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using YahooTWBuy.ViewModels;
 
 namespace YahooTWBuy
 {
@@ -13,7 +15,18 @@ namespace YahooTWBuy
         {
             InitializeComponent();
 
-            MainPage = new YahooTWBuy.Pages.MainPage();
+            MainPage = new YahooTWBuy.Pages.MainPage(CrossConnectivity.Current.IsConnected);
+
+            CrossConnectivity.Current.ConnectivityChanged += (sender, args) => {
+
+                var currentNetworkConnectedStatus = (MainPage.BindingContext as BaseViewModel).NetworkIsConnected;
+
+                if (currentNetworkConnectedStatus == false && args.IsConnected == true)
+                         YahooTWBuy.Pages.MainPage.RefreshWebView();
+
+                (MainPage.BindingContext as BaseViewModel).NetworkIsConnected = args.IsConnected;
+
+            };
         }
 
         protected override void OnStart()
