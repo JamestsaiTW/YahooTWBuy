@@ -18,6 +18,7 @@ namespace YahooTWBuy.Pages
         private static DateTime? _lastBackKeyDownTime;
         private XamarinFormsTimer _mainPageTimer;
         private double _uwpInitialViewHeight;
+        private bool _functionNotWork;
 
         public MainPage(bool currentNetworkIsConnected, double uwpInitialViewHeight = 0.0)
         {
@@ -137,12 +138,39 @@ namespace YahooTWBuy.Pages
 
         private void MainWebView_Navigating(object sender, WebNavigatingEventArgs e)
         {
-            _mainPageViewModel.IsBusy = true;
+            if (e.Url.StartsWith("https://m.tw.buy") || e.Url.StartsWith("https://login.yahoo.com/m/")) 
+            {
+                _mainPageViewModel.IsBusy = true;
+                _functionNotWork = false;
+                return;
+            }
+
+
+           _functionNotWork = true;
         }
 
-        private void MainWebView_Navigated(object sender, WebNavigatedEventArgs e)
+        private async void MainWebView_Navigated(object sender, WebNavigatedEventArgs e)
         {
             _mainPageViewModel.IsBusy = false;
+
+            _mainWebView.Eval(@"(function()
+                {
+                    var hyperlinks = document.getElementsByTagName('a');
+                    for(var i = 0; i < hyperlinks.length; i++)
+                    {
+                        if(hyperlinks[i].getAttribute('target') != null)
+                        {
+                            hyperlinks[i].setAttribute('target', '_self');
+                        }
+                    }
+                })()");
+
+            if(_functionNotWork)
+            {
+                await DisplayAlert("通知", "抱歉，此選項在本 App 將無法正常使用，即將返回前一頁...", "了解");
+                _mainWebView.GoBack();
+            }
+          
         }
     }
 }
