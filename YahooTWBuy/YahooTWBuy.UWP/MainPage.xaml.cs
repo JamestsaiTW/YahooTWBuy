@@ -11,21 +11,24 @@ using Windows.Graphics.Display;
 namespace YahooTWBuy.UWP
 {
 
-    public sealed partial class MainPage
+    public sealed partial class MainPage 
     {
         private static YahooTWBuy.App _mainApp;
-        public static YahooTWBuy.App MainApp => _mainApp ?? (_mainApp = new YahooTWBuy.App() );
-        private bool IsSystemVirtualButtonBarShow => InitialViewHeight >= _currentViewHeight && DisplayInformation.GetForCurrentView().CurrentOrientation == DisplayOrientations.Portrait;
+        public static YahooTWBuy.App MainApp => _mainApp ?? (_mainApp = new YahooTWBuy.App(InitialViewHeight) );
+        private static bool IsSystemVirtualButtonBarShow => InitialViewHeight >= _currentViewHeight && DisplayInformation.GetForCurrentView().CurrentOrientation == DisplayOrientations.Portrait;
 
         public static readonly double InitialViewHeight = ApplicationView.GetForCurrentView().VisibleBounds.Height;
-        private double _currentViewHeight;
+        private static double _currentViewHeight;
         public MainPage()
         {
             this.InitializeComponent();
+
             ShowStatusBar();
 
             if (DeviceTypeHelper.GetDeviceFromFactorType() == DeviceFromFactorType.Phone)
             {
+     
+                Debug.WriteLine("current:" + _currentViewHeight + "; initial:" + InitialViewHeight + ";  BarStatus:" + IsSystemVirtualButtonBarShow);
 
                 ApplicationView.GetForCurrentView().VisibleBoundsChanged += (sender, e) =>
                 {
@@ -37,11 +40,13 @@ namespace YahooTWBuy.UWP
                                                                                                                                     "UWP_SystemVirtualButtonBarStatus", IsSystemVirtualButtonBarShow);
 
                 };
+
+
             }
 
-            LoadApplication(MainApp);
-        }
+             LoadApplication(MainApp);
 
+        }
 
 
         private async void HideStatusBar()

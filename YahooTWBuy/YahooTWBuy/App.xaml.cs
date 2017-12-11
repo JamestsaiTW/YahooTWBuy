@@ -11,21 +11,22 @@ namespace YahooTWBuy
 {
     public partial class App : Application
     {
-        public App()
+        public App(double uwpInitialViewHeight = 0.0)
         {
             InitializeComponent();
 
-            MainPage = new YahooTWBuy.Pages.MainPage(CrossConnectivity.Current.IsConnected);
+            MainPage = new YahooTWBuy.Pages.MainPage(CrossConnectivity.Current.IsConnected, uwpInitialViewHeight);
 
             CrossConnectivity.Current.ConnectivityChanged += (sender, args) => {
 
-                var currentNetworkConnectedStatus = (MainPage.BindingContext as BaseViewModel).NetworkIsConnected;
+               // var baseViewModel = MainPage.BindingContext as BaseViewModel;
 
-                if (currentNetworkConnectedStatus == false && args.IsConnected == true)
-                         YahooTWBuy.Pages.MainPage.RefreshWebView();
+                //if (baseViewModel.NetworkIsConnected == false && args.IsConnected == true)
+                //{
+                         YahooTWBuy.Pages.MainPage.RefreshWebView(args.IsConnected);
+                //}
 
-                (MainPage.BindingContext as BaseViewModel).NetworkIsConnected = args.IsConnected;
-
+                //baseViewModel.NetworkIsConnected = args.IsConnected;
             };
         }
 
