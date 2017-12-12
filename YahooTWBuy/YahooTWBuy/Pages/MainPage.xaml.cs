@@ -138,7 +138,7 @@ namespace YahooTWBuy.Pages
 
         private void MainWebView_Navigating(object sender, WebNavigatingEventArgs e)
         {
-            if (e.Url.StartsWith("https://m.tw.buy") || e.Url.StartsWith("https://login.yahoo.com/m/")) 
+            if (e.Url.StartsWith("https://m.tw.buy") || e.Url.StartsWith("https://m.tw.pay.buy.yahoo.com") || e.Url.StartsWith("https://login.yahoo.com/m/") || e.Url.StartsWith("https://login.yahoo.com/")) 
             {
                 _mainPageViewModel.IsBusy = true;
                 _functionNotWork = false;
