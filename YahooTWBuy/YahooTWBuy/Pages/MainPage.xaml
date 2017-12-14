@@ -21,10 +21,10 @@
             <StackLayout
                 Grid.Row="0"
                 Grid.RowSpan="2"
-                BackgroundColor="White"
+                BackgroundColor="DarkGray"
                 HorizontalOptions="FillAndExpand"
                 IsVisible="{Binding IsBusy}"
-                Opacity="0.7"
+                Opacity="0.6"
                 VerticalOptions="FillAndExpand">
                 <ActivityIndicator
                     HorizontalOptions="FillAndExpand"
@@ -38,7 +38,7 @@
                 BackgroundColor="Black"
                 HorizontalOptions="FillAndExpand"
                 IsVisible="{Binding ToastMessageIsVisible}"
-                Opacity="0.3" />
+                Opacity="0.6" />
             <Label
                 Grid.Row="1"
                 FontAttributes="Bold"

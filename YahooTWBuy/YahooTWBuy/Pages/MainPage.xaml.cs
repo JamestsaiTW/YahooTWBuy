@@ -40,7 +40,7 @@ namespace YahooTWBuy.Pages
             });
         }
 
-        internal static void RefreshWebView(bool networkIsConnected)
+        internal static void RefreshWebView(bool networkIsConnected=true)
         {
             _mainPageViewModel.NetworkIsConnected = networkIsConnected;
 
@@ -88,10 +88,11 @@ namespace YahooTWBuy.Pages
             {
                 await DisplayAlert("通知", "目前網路狀態不穩定，無法瀏覽 Yahoo! 購物中心 資料" +
                     "\r\n\r\n請等待網路連線恢復穩定...", "了解");
-
                 RefreshWebView(_mainPageViewModel.NetworkIsConnected);
+                return;
             }
 
+            RefreshWebView();
 
         }
 
@@ -167,8 +168,17 @@ namespace YahooTWBuy.Pages
 
             if(_functionNotWork)
             {
-                await DisplayAlert("通知", "抱歉，此選項在本 App 將無法正常使用，即將返回前一頁...", "了解");
+                await DisplayAlert("通知", "抱歉 Yahoo! 購物中心 此選項的畫面，在本 App 中會無法正確呈現。\r\n\r\nApp 將會回到上一個選項畫面...", "了解");
+                _functionNotWork = false;
+
+                if (e.Url == "https://tw.mobi.yahoo.com/")
+                { 
+                    _mainWebView.Source = new UrlWebViewSource() { Url = "https://m.tw.buy.yahoo.com/" };
+                    return;
+                }
+
                 _mainWebView.GoBack();
+                _functionNotWork = false;
             }
           
         }
