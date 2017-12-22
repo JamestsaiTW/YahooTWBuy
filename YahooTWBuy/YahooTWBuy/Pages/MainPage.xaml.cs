@@ -17,12 +17,14 @@ namespace YahooTWBuy.Pages
         private static MainPageViewModel _mainPageViewModel;
         private static DateTime? _lastBackKeyDownTime;
         private XamarinFormsTimer _mainPageTimer;
+        private XamarinFormsTimer _webPageLoadingTimer;
         private double _uwpInitialViewHeight;
         private bool _functionNotWork;
 
         public MainPage(bool currentNetworkIsConnected, double uwpInitialViewHeight = 0.0)
         {
             InitializeComponent();
+
             BindingContext = _mainPageViewModel = new MainPageViewModel() {
                  NetworkIsConnected = currentNetworkIsConnected
             };
@@ -38,6 +40,11 @@ namespace YahooTWBuy.Pages
             {
                 _mainPageViewModel.ToastMessageIsVisible = false;
             });
+
+            _webPageLoadingTimer = new XamarinFormsTimer(new TimeSpan(0, 0, 0, 10), () =>
+            {
+                _mainPageViewModel.StopLoadingButtonIsVisible = true;
+            });
         }
 
         internal static void RefreshWebView(bool networkIsConnected=true)
@@ -46,6 +53,8 @@ namespace YahooTWBuy.Pages
 
             if (_mainWebView != null)
             {
+                _mainPageViewModel.StopLoadingButtonIsVisible = false;
+
                 if (_mainPageViewModel.NetworkIsConnected)
                 {
                     _mainWebView.Source = (_mainWebView.Source as UrlWebViewSource).Url;
@@ -57,6 +66,7 @@ namespace YahooTWBuy.Pages
                 _mainPageViewModel.IsBusy = true;
                 _mainPageViewModel.ToastMessageIsVisible = true;
                 _mainPageViewModel.ToastMessage = "網路狀態不穩定...";
+
             }
         }
 
@@ -83,6 +93,7 @@ namespace YahooTWBuy.Pages
             }
 
             _mainWebView = MainWebView;
+             _mainPageViewModel.IsBusy = true;
 
             if (! _mainPageViewModel.NetworkIsConnected)
             {
@@ -139,19 +150,28 @@ namespace YahooTWBuy.Pages
 
         private void MainWebView_Navigating(object sender, WebNavigatingEventArgs e)
         {
-            if (e.Url.StartsWith("https://m.tw.buy") || e.Url.StartsWith("https://m.tw.pay.buy.yahoo.com") || e.Url.StartsWith("https://login.yahoo.com/m/") || e.Url.StartsWith("https://login.yahoo.com/")) 
+            if (e.Url.StartsWith("https://tw.rd.yahoo.com/referurl/buy/act/") || e.Url.StartsWith("https://yho.com/shpandroid"))
             {
+                _mainWebView.Source = new UrlWebViewSource() { Url = "https://m.tw.buy.yahoo.com/" };
+                return;
+            }
+
+            if (PageUrlsHandler.CheckIsOk(e.Url)) 
+            {
+                _webPageLoadingTimer.Start();
                 _mainPageViewModel.IsBusy = true;
                 _functionNotWork = false;
                 return;
             }
-
 
            _functionNotWork = true;
         }
 
         private async void MainWebView_Navigated(object sender, WebNavigatedEventArgs e)
         {
+            _webPageLoadingTimer.Stop();
+            _mainPageViewModel.StopLoadingButtonIsVisible = false;
+
             _mainPageViewModel.IsBusy = false;
 
             _mainWebView.Eval(@"(function()
@@ -178,9 +198,14 @@ namespace YahooTWBuy.Pages
                 }
 
                 _mainWebView.GoBack();
-                _functionNotWork = false;
             }
           
+        }
+
+        private void StopLoadingButton_Clicked(object sender, EventArgs e)
+        {
+            _mainPageViewModel.StopLoadingButtonIsVisible = false;
+            _mainPageViewModel.IsBusy = false;
         }
     }
 }

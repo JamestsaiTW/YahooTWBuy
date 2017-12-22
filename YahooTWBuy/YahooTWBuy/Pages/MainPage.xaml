@@ -49,6 +49,14 @@
                 TextColor="White"
                 VerticalOptions="CenterAndExpand"
                 VerticalTextAlignment="Center" />
+            <Button
+                Grid.Row="1"
+                BackgroundColor="DarkGray"
+                Clicked="StopLoadingButton_Clicked"
+                IsVisible="{Binding StopLoadingButtonIsVisible}"
+                Opacity="0.9"
+                Text="按此停止網頁讀取..."
+                TextColor="White" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -1,7 +1,7 @@
 ﻿{
   "dependencies": {
-    "LiveXAML": "2.1.6",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4",
+    "LiveXAML": "2.1.16",
+    "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.5",
     "Xam.Plugin.Connectivity": "3.0.3",
     "Xamarin.Forms": "2.5.0.121934"
   },

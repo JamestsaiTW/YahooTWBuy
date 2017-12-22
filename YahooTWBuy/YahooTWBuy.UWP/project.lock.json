@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.10586": {
-      "LiveXAML/2.1.6": {
+      "LiveXAML/2.1.16": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -35,7 +35,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.2": {
+      "Microsoft.Net.Native.Compiler/1.7.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -245,14 +245,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.2",
+          "Microsoft.Net.Native.Compiler": "1.7.3",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -2247,7 +2247,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm": {
-      "LiveXAML/2.1.6": {
+      "LiveXAML/2.1.16": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -2280,7 +2280,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.2": {
+      "Microsoft.Net.Native.Compiler/1.7.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -2437,14 +2437,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.2",
+          "Microsoft.Net.Native.Compiler": "1.7.3",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -2477,7 +2477,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4"
+          "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.5"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -2820,7 +2820,7 @@
           "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -4582,7 +4582,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm-aot": {
-      "LiveXAML/2.1.6": {
+      "LiveXAML/2.1.16": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -4615,7 +4615,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.2": {
+      "Microsoft.Net.Native.Compiler/1.7.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -4773,14 +4773,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.2",
+          "Microsoft.Net.Native.Compiler": "1.7.3",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -4813,7 +4813,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4"
+          "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.5"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -5201,7 +5201,7 @@
           "runtimes/aot/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -6953,7 +6953,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64": {
-      "LiveXAML/2.1.6": {
+      "LiveXAML/2.1.16": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -6986,7 +6986,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.2": {
+      "Microsoft.Net.Native.Compiler/1.7.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -7146,14 +7146,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.2",
+          "Microsoft.Net.Native.Compiler": "1.7.3",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -7186,7 +7186,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4"
+          "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.5"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -7529,7 +7529,7 @@
           "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -9297,7 +9297,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64-aot": {
-      "LiveXAML/2.1.6": {
+      "LiveXAML/2.1.16": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -9330,7 +9330,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.2": {
+      "Microsoft.Net.Native.Compiler/1.7.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -9491,14 +9491,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.2",
+          "Microsoft.Net.Native.Compiler": "1.7.3",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -9531,7 +9531,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4"
+          "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.5"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -9919,7 +9919,7 @@
           "runtimes/aot/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -11677,7 +11677,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86": {
-      "LiveXAML/2.1.6": {
+      "LiveXAML/2.1.16": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -11710,7 +11710,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.2": {
+      "Microsoft.Net.Native.Compiler/1.7.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -11870,14 +11870,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.2",
+          "Microsoft.Net.Native.Compiler": "1.7.3",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -11910,7 +11910,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4"
+          "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.5"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -12253,7 +12253,7 @@
           "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -14021,7 +14021,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86-aot": {
-      "LiveXAML/2.1.6": {
+      "LiveXAML/2.1.16": {
         "type": "package",
         "build": {
           "build/LiveXAML.targets": {}
@@ -14054,7 +14054,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.2": {
+      "Microsoft.Net.Native.Compiler/1.7.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -14215,14 +14215,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.2",
+          "Microsoft.Net.Native.Compiler": "1.7.3",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -14255,7 +14255,7 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11",
-          "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4"
+          "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.5"
         },
         "compile": {
           "ref/netcore50/_._": {}
@@ -14643,7 +14643,7 @@
           "runtimes/aot/lib/netcore50/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
+      "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -16402,17 +16402,17 @@
     }
   },
   "libraries": {
-    "LiveXAML/2.1.6": {
-      "sha512": "BvYcFvYzJ5x8XtlA8RlRf800zEAn2BRCmgEoEmYCmZQ7WW0A8YGbZx22N18hjQ0GhUfDCrjEmFphFvJBnj7png==",
+    "LiveXAML/2.1.16": {
+      "sha512": "jgDZjoGFRfknzAHut0or03PuKPcUBDu/Aaj2qSoHCOqjM/ZVRLX+fk5e4eES4CqSh1xd/P5dgNJQKazulrWlgA==",
       "type": "package",
-      "path": "livexaml/2.1.6",
+      "path": "livexaml/2.1.16",
       "files": [
         "build/LiveXAML.targets",
         "build/XamarinLive.Build.dll",
         "build/XamarinLive.Common.dll",
         "build/minified.cs",
         "build/minified.tpl.cs",
-        "livexaml.2.1.6.nupkg.sha512",
+        "livexaml.2.1.16.nupkg.sha512",
         "livexaml.nuspec"
       ]
     },
@@ -16473,15 +16473,15 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Microsoft.Net.Native.Compiler/1.7.2": {
-      "sha512": "3b6ztTeQxeiBMgXAK1/oMzwhQsQ02W6EQ6lU7Ts7ZmoJcwG7qpjI/BfWiHk5CIpaqKP2BEcpTCDdSDcjkO+YHw==",
+    "Microsoft.Net.Native.Compiler/1.7.3": {
+      "sha512": "ed0kCs6Gxfw2ZGf34eqO8cwaD16Ll1FKw+jBfGevdiHqc2kTwux9yqkHwhe9WP8jzSbuZX3o4y3wMUUkz5gSeg==",
       "type": "package",
-      "path": "microsoft.net.native.compiler/1.7.2",
+      "path": "microsoft.net.native.compiler/1.7.3",
       "files": [
-        "Microsoft.Net.Native.Compiler.1.7.2.nupkg.sha512",
-        "Microsoft.Net.Native.Compiler.nuspec",
         "build/Microsoft.Net.Native.Compiler.props",
         "build/Microsoft.Net.Native.Compiler.targets",
+        "microsoft.net.native.compiler.1.7.3.nupkg.sha512",
+        "microsoft.net.native.compiler.nuspec",
         "tools/LibraryXML/Callisto.rd.xml",
         "tools/LibraryXML/GalaSoft.MvvmLight.Extras.Win8.rd.xml",
         "tools/LibraryXML/GalaSoft.MvvmLight.Win8.rd.xml",
@@ -18708,15 +18708,15 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
-      "sha512": "D0sTB0Ng5r69XKBQxdogba180v7+9ckEtrovPHnPhkL+bj+qZ9wONyWTOTn+kvPhSkeEUFRECEFtOyhYNDIUTA==",
+    "Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
+      "sha512": "suR2zL+dQAcOxs2rokFV8KGbECXLDhB8U333NMYNtftqLFnfTMVX0qFVG8f34q3dALEuq/vlrZ/RCCL3NOEApg==",
       "type": "package",
-      "path": "microsoft.netcore.universalwindowsplatform/6.0.4",
+      "path": "microsoft.netcore.universalwindowsplatform/6.0.5",
       "files": [
         "LICENSE.TXT",
-        "Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
-        "Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
+        "microsoft.netcore.universalwindowsplatform.6.0.5.nupkg.sha512",
+        "microsoft.netcore.universalwindowsplatform.nuspec",
         "ref/netcore50/_._",
         "ref/uap10.0.15138/Microsoft.CSharp.dll",
         "ref/uap10.0.15138/Microsoft.CSharp.xml",
@@ -19853,16 +19853,16 @@
         "runtimes/win/lib/netstandard1.5/System.Runtime.Extensions.dll"
       ]
     },
-    "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
-      "sha512": "9xRow1giMV7bAp/06SMhs0Gf+bx2Ctp248bcBm/h0ZGcR1SJiAPuVvhDaSzxyMrTe08t/vf5pYMHj9kyMFtw1w==",
+    "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
+      "sha512": "QM1Mq6C4V3ycqf0/8NLXJ9CjUu3jRGtf76tPOcdEjARDW8zDVyynOYiV5x5deuZS/nHaKHe51lsZGuqdqMohBQ==",
       "type": "package",
-      "path": "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform/6.0.4",
+      "path": "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform/6.0.5",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
-        "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
+        "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.0.5.nupkg.sha512",
+        "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.nuspec",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
         "runtimes/win10-arm-aot/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
@@ -20042,16 +20042,16 @@
         "runtimes/win10-arm-aot/lib/netcore50/clrcompression.dll"
       ]
     },
-    "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
-      "sha512": "W1DmqqLsa5ApstteB2tcOWk9Ca1NvT7vTk67fu/JOE1BGkVn6BfD6BxFJG0+70kHIUyHcJPwGDnZ6JDk5d0ikg==",
+    "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
+      "sha512": "dTPIIlo1DK2iJ5dDUO3m/xHa4FhDD0zFyVvj2IaDEUa33QwNN59Bavg2snmIlLZZaFxTP7tl284bgJ5cGSLt9A==",
       "type": "package",
-      "path": "runtime.win10-arm.microsoft.netcore.universalwindowsplatform/6.0.4",
+      "path": "runtime.win10-arm.microsoft.netcore.universalwindowsplatform/6.0.5",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
-        "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
+        "runtime.win10-arm.microsoft.netcore.universalwindowsplatform.6.0.5.nupkg.sha512",
+        "runtime.win10-arm.microsoft.netcore.universalwindowsplatform.nuspec",
         "runtimes/win10-arm/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-arm/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
         "runtimes/win10-arm/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
@@ -20218,16 +20218,16 @@
         "runtimes/win10-arm/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
-    "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
-      "sha512": "xX/N8leWGv6hJvA4ABOKaG4ixRwU9RN01AmnggiBDgTtPaPJAGbZpuiSQy7yZNpsqpMgDk4z2ag29l/vs3luDQ==",
+    "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
+      "sha512": "AWZIFcu8xoZitu3ZdEgbis5NTnXUZ0DrGlekieo9+qwjgnC1aOju6PJYPNQzaH11x6jFGCyU9DKrazu6olRu/Q==",
       "type": "package",
-      "path": "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform/6.0.4",
+      "path": "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform/6.0.5",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
-        "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
+        "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform.6.0.5.nupkg.sha512",
+        "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform.nuspec",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
         "runtimes/win10-x64-aot/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
@@ -20407,16 +20407,16 @@
         "runtimes/win10-x64-aot/lib/netcore50/clrcompression.dll"
       ]
     },
-    "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
-      "sha512": "kzhOIrg9yZa0JORjZTDj272wCJ5VgowkxEiX5oPPRefd3sE1/mmiLUKrMOC3RESv5QZkPiABzkjIRVRNqsgWyw==",
+    "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
+      "sha512": "I774FxmdywBPYipSE0Og5HajYt0eBto8tw9QNlsZt0jVNShltEqBq7LC2MkRkWkf2VDrJEY0jU6I320jLTfwZA==",
       "type": "package",
-      "path": "runtime.win10-x64.microsoft.netcore.universalwindowsplatform/6.0.4",
+      "path": "runtime.win10-x64.microsoft.netcore.universalwindowsplatform/6.0.5",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
-        "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
+        "runtime.win10-x64.microsoft.netcore.universalwindowsplatform.6.0.5.nupkg.sha512",
+        "runtime.win10-x64.microsoft.netcore.universalwindowsplatform.nuspec",
         "runtimes/win10-x64/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-x64/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
         "runtimes/win10-x64/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
@@ -20583,16 +20583,16 @@
         "runtimes/win10-x64/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
-    "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
-      "sha512": "N+bSRgUV0o0LUve8jTNCRHRTPJ/r+q02cKGe6hqlstMGS00Ade4G6ISQdEkmGZt29jXgs1d/EW9goWMWrsDrYg==",
+    "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
+      "sha512": "TRA8QnE7CN7oVXPMybL/ZojpOzkond2euO19YYzicwZjrvRrudy3OXTAQlPbtE2xFQ0Va2U4A9gcrsiCyxXEJA==",
       "type": "package",
-      "path": "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform/6.0.4",
+      "path": "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform/6.0.5",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
-        "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
+        "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform.6.0.5.nupkg.sha512",
+        "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform.nuspec",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
         "runtimes/win10-x86-aot/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
@@ -20772,16 +20772,16 @@
         "runtimes/win10-x86-aot/lib/netcore50/clrcompression.dll"
       ]
     },
-    "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.4": {
-      "sha512": "7S9jdgHXE2MH9llcDz0QQA9Ei2vZKs3cIYgiFKS48kBdB8ZIhY+EbJ0OvByhMBTZQiRs+NokieSuhge5z0nnDw==",
+    "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.5": {
+      "sha512": "wc1xGboXkp6PQpxnEtXVZEYATCU2n2Z3YoCq4Zq9QtreDF+RfO4ubFEAj/9K9agnW5CdtWr7J2nsFLk0veafgg==",
       "type": "package",
-      "path": "runtime.win10-x86.microsoft.netcore.universalwindowsplatform/6.0.4",
+      "path": "runtime.win10-x86.microsoft.netcore.universalwindowsplatform/6.0.5",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform.6.0.4.nupkg.sha512",
-        "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
+        "runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.0.5.nupkg.sha512",
+        "runtime.win10-x86.microsoft.netcore.universalwindowsplatform.nuspec",
         "runtimes/win10-x86/lib/uap10.0.15138/Microsoft.CSharp.dll",
         "runtimes/win10-x86/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
         "runtimes/win10-x86/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
@@ -26253,8 +26253,8 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "LiveXAML >= 2.1.6",
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.4",
+      "LiveXAML >= 2.1.16",
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.5",
       "Xam.Plugin.Connectivity >= 3.0.3",
       "Xamarin.Forms >= 2.5.0.121934"
     ],
@@ -26296,8 +26296,8 @@
       }
     },
     "dependencies": {
-      "LiveXAML": "[2.1.6, )",
-      "Microsoft.NETCore.UniversalWindowsPlatform": "[6.0.4, )",
+      "LiveXAML": "[2.1.16, )",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[6.0.5, )",
       "Xam.Plugin.Connectivity": "[3.0.3, )",
       "Xamarin.Forms": "[2.5.0.121934, )"
     },

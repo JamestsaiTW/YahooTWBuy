@@ -30,5 +30,18 @@ namespace YahooTWBuy.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        private bool _stopLoadingButtonIsVisible;
+        public bool StopLoadingButtonIsVisible
+        {
+            get { return _stopLoadingButtonIsVisible; }
+            set
+            {
+                if (_stopLoadingButtonIsVisible != value)
+                    _stopLoadingButtonIsVisible = value;
+                OnPropertyChanged();
+            }
+        }
+
     }
 }
