@@ -6,7 +6,7 @@ using YahooTWBuy.UWP.Helpers;
 using System.Diagnostics;
 
 using Windows.Graphics.Display;
-
+using Windows.UI.Xaml.Navigation;
 
 namespace YahooTWBuy.UWP
 {
@@ -67,5 +67,6 @@ namespace YahooTWBuy.UWP
                 statusbar.BackgroundOpacity = 1;
             }
         }
-    }
+
+   }
 }

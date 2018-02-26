@@ -18,15 +18,7 @@ namespace YahooTWBuy
             MainPage = new YahooTWBuy.Pages.MainPage(CrossConnectivity.Current.IsConnected, uwpInitialViewHeight);
 
             CrossConnectivity.Current.ConnectivityChanged += (sender, args) => {
-
-               // var baseViewModel = MainPage.BindingContext as BaseViewModel;
-
-                //if (baseViewModel.NetworkIsConnected == false && args.IsConnected == true)
-                //{
                          YahooTWBuy.Pages.MainPage.RefreshWebView(args.IsConnected);
-                //}
-
-                //baseViewModel.NetworkIsConnected = args.IsConnected;
             };
         }
 

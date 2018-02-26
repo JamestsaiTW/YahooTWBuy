@@ -174,18 +174,6 @@ namespace YahooTWBuy.Pages
 
             _mainPageViewModel.IsBusy = false;
 
-            _mainWebView.Eval(@"(function()
-                {
-                    var hyperlinks = document.getElementsByTagName('a');
-                    for(var i = 0; i < hyperlinks.length; i++)
-                    {
-                        if(hyperlinks[i].getAttribute('target') != null)
-                        {
-                            hyperlinks[i].setAttribute('target', '_self');
-                        }
-                    }
-                })()");
-
             if(_functionNotWork)
             {
                 await DisplayAlert("通知", "抱歉 Yahoo! 購物中心 此選項的畫面，在本 App 中會無法正確呈現。\r\n\r\nApp 將會回到上一個選項畫面...", "了解");
@@ -199,8 +187,19 @@ namespace YahooTWBuy.Pages
 
                 _mainWebView.GoBack();
             }
-          
+
+            _mainWebView.Eval(@"(function()
+                {
+                    var hyperlinks = document.getElementsByTagName('a');
+                    for(var i = 0; i < hyperlinks.length; i++)
+                    {
+                            hyperlinks[i].setAttribute('target', '_self');
+                    }
+                })()");
+
         }
+
+        
 
         private void StopLoadingButton_Clicked(object sender, EventArgs e)
         {
