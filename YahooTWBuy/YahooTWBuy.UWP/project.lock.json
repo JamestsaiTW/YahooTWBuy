@@ -26117,12 +26117,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\James Tsai\\Source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.UWP\\YahooTWBuy.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\James Tsai\\source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.UWP\\YahooTWBuy.UWP.csproj",
       "projectName": "YahooTWBuy.UWP",
-      "projectPath": "C:\\Users\\James Tsai\\Source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.UWP\\YahooTWBuy.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\James Tsai\\Source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.UWP\\project.json",
+      "projectPath": "C:\\Users\\James Tsai\\source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.UWP\\YahooTWBuy.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\James Tsai\\source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.UWP\\project.json",
       "packagesPath": "C:\\Users\\James Tsai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\James Tsai\\Source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.UWP\\obj\\",
+      "outputPath": "C:\\Users\\James Tsai\\source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
@@ -26140,30 +26140,18 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\James Tsai\\Source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.csproj": {
-              "projectPath": "C:\\Users\\James Tsai\\Source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.csproj"
+            "C:\\Users\\James Tsai\\source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.csproj": {
+              "projectPath": "C:\\Users\\James Tsai\\source\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy\\YahooTWBuy.csproj"
             }
           }
         }
       }
     },
     "dependencies": {
-      "LiveXAML": {
-        "target": "Package",
-        "version": "[2.1.21, )"
-      },
-      "Microsoft.NETCore.UniversalWindowsPlatform": {
-        "target": "Package",
-        "version": "[6.0.7, )"
-      },
-      "Xam.Plugin.Connectivity": {
-        "target": "Package",
-        "version": "[3.1.1, )"
-      },
-      "Xamarin.Forms": {
-        "target": "Package",
-        "version": "[2.5.0.280555, )"
-      }
+      "LiveXAML": "[2.1.21, )",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[6.0.7, )",
+      "Xam.Plugin.Connectivity": "[3.1.1, )",
+      "Xamarin.Forms": "[2.5.0.280555, )"
     },
     "frameworks": {
       "uap10.0.10586": {}

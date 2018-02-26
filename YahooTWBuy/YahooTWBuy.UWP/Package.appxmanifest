@@ -15,10 +15,15 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="YahooTWBuy.UWP.App">
-      <uap:VisualElements DisplayName="Yahoo! 奇摩購物中心" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="利用 Xamarin.Forms 技術，搭配  Yahoo 奇摩購物中心的 Mobile 網頁，所製作 Yahoo奇摩購物中心的 UWP App。" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+      <uap:VisualElements DisplayName="Y! 購Go" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="利用 Xamarin.Forms 技術，內嵌 Yahoo! 奇摩購物中心的 Mobile 網頁，所製作出 Yahoo! 奇摩購物中心 的 UWP App 提供給 Windows Phone 的使用者，也能在自己的 Windows Phone 上到 Yahoo! 奇摩購物中心購物的便利性。注意: 此 App 非 Yahoo! 奇摩購物中心官方正式 App。" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" ShortName="Y! 購Go" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
         </uap:DefaultTile>
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#7030A0" />
         <uap:InitialRotationPreference>
           <uap:Rotation Preference="portrait" />
           <uap:Rotation Preference="portraitFlipped" />

@@ -17,4 +17,14 @@
     <DeviceId>5E4701F2-7B83-49E8-A957-7EF76386E745</DeviceId>
     <UseEmulator>true</UseEmulator>
   </PropertyGroup>
+  <PropertyGroup>
+    <Source>C:\Users\James Tsai\Desktop\Y!購 Go.png</Source>
+    <SmallTileSource>C:\Users\James Tsai\Desktop\Y!購 Go.png</SmallTileSource>
+    <MediumTileSource>C:\Users\James Tsai\Desktop\Y!購 Go.png</MediumTileSource>
+    <WideTileSource>C:\Users\James Tsai\Desktop\Y!購 Go.png</WideTileSource>
+    <LargeTileSource>C:\Users\James Tsai\Desktop\Y!購 Go.png</LargeTileSource>
+    <AppIconSource>C:\Users\James Tsai\Desktop\Y!購 Go.png</AppIconSource>
+    <SplashScreenSource>C:\Users\James Tsai\Desktop\Y!購 Go.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\James Tsai\Desktop\Y!購 Go.png</PackageLogoSource>
+  </PropertyGroup>
 </Project>
